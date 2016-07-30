@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pacm.pruebasdeinterfaces.NavigationMenu"
+    tools:showIn="@layout/app_bar_navigation_menu"
+    >
+
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="3dp">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+
+                                    <Button
+                                        android:id="@+id/reg_nuevo"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Nuevo" />
+                                    <Button
+                                        android:id="@+id/reg_ver"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Ver" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+
+                                    <Button
+                                        android:id="@+id/reg_borrar"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Borrar"
+                                        />
+                                    <Button
+                                        android:visibility="invisible"
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="3dp">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="3dp">
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp">
+
+                                            <Button
+                                                android:id="@+id/bt_informacion"
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Informacion" />
+                                            <Button
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Semejanzas" />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp">
+
+                                            <Button
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Aritmetica"
+                                                />
+                                            <Button
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Vocabulario"
+                                                />
+
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="150dp">
+
+                                            <Button
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Comprension"
+                                                />
+                                            <Button
+                                                android:layout_weight="1"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:text="Digitos"
+                                                />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </ScrollView>
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="3dp">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Inforrmacion" />
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Semejanzas" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Inforrmacion"
+                                        />
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp">
+
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                    <Button
+                                        android:layout_weight="1"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </ScrollView>
+                    </LinearLayout>
+                </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">pruebas de interfaces</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="reg_nuevo">Nuevo Registro</string>
+    <string name="title_activity_prueba">prueba</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ejemplo_de_activity_borrar_despues">
+        ejemplo_de_activity_borrar_despues
+    </string>
+</resources>
